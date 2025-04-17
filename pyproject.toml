@@ -8,7 +8,17 @@ packages = [{include = "ai_inspection_app", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+torch = "^2.6.0"
+torchvision = "^0.21.0"
+ultralytics = "^8.3.110"
+albumentations = "^2.0.5"
+matplotlib = "^3.10.1"
+tqdm = "^4.67.1"
+scikit-learn = "^1.6.1"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
 
 [build-system]
 requires = ["poetry-core"]
